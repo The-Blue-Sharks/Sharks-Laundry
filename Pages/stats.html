@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View statistics</title>
+    <link rel="stylesheet" href="../css/stats.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+
+    <header id="header">
+        <div id="logo-container">
+            <img id="header-img" src="../img/logo.png" alt="">
+        </div>
+        <nav id="nav-bar">
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.html" class="nav-link"> Home</a>
+                </li>
+                <li>
+                    <a href="order.html" class="nav-link">OrderPage</a>
+                </li>
+                <li>
+                    <a href="offers.html" class="nav-link">DailyOffer</a>
+                </li>
+                <li>
+                    <a href="stats.html" class="nav-link current">Statistics</a>
+                </li>
+                <li>
+                    <a href="aboutUs.html" class="nav-link">About us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="chart">
+        <div class="chart-header">
+            <h1 > Statistics from Our Customer </h1>
+        </div>
+        <div class="display-chart">
+            <canvas id="bar-chart" height= "70vh" ></canvas>
+        </div>
+        <div class="display-stat">
+            <form id="show-statistics" action="">
+                <input type="submit"  value="Display Statistics">
+            </form>
+
+        </div>
+    </section>
+
+    <section class="table">
+
+        <div class="password-table">
+            
+            <form action="" id="password">
+                <label for="password"> Owner's Password:</label><br>
+                <h1 id = "error_message"></h1>
+                <input type="password" id="password" name="password">
+                <input type="submit" value="Preview results">
+            </form>
+        </div>
+
+        <div class="display-table">
+            <table id="owner-table"></table>
+            <form id="show-table">
+                <input type="submit"  value="Display Owner Table">
+            </form>
+        </div>
+        
+        
+       
+        
+
+    </section>
+
+
+
+
+    <footer class="footer-dark">
+        <div class="container1">
+            <div class="about-links">
+
+                <ul>
+                    <li>
+                        <h3>About</h3>
+                    </li>
+                    <li><a href="home.html">Company</a></li>
+                    <li><a href="aboutUs.html">Team</a></li>
+                    <li><a href="#">Offers</a></li>
+                </ul>
+            </div>
+
+            <div class="about-paraghraph">
+                <p>No change? No problem! <br>
+                    Laundry Shark understands that consumers today have more choices, more mobility, and less time than
+                    ever before.</p>
+            </div>
+            <div class="social-media">
+                <ul>
+
+                    <li> <a href="#" title="FaceBook"><i class="fab fa-facebook-square"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-tiktok"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-whatsapp-square"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        </div>
+        <p class="copyright">Laundry Shark © 2021</p>
+        </div>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="../js/chart.js"></script>
+    <script src="../js/Footerscript.js"></script>
+
+  
+
+</body>
+
+</html>

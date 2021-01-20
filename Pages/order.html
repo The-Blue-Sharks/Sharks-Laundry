@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/orderStyle.css">
+</head>
+
+<body>
+    <section class="sticky">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+
+        </div>
+    </section>
+
+    <header id="header">
+        <div id="logo-container">
+            <img id="header-img" src="../img/logo.png" alt="">
+        </div>
+        <nav id="nav-bar">
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.html" class="nav-link"> Home</a>
+                </li>
+                <li>
+                    <a href="order.html" class="nav-link current">OrderPage</a>
+                </li>
+                <li>
+                    <a href="offers.html" class="nav-link">DailyOffer</a>
+                </li>
+                <li>
+                    <a href="stats.html" class="nav-link">Statistics</a>
+                </li>
+                <li>
+                    <a href="aboutUs.html" class="nav-link ">About us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="order">
+        <form action="" id="order-from">
+            <fieldset>
+                <legend>Order Form </legend>
+                <div id="leftSide">
+                    <label for="name"> Name: <br>
+                        <input type="text" id="Name" name="name" placeholder="Your Name" required>
+                    </label> <br> <br>
+                    <Label for="contact"> Contact Number: <br>
+                        <input type="tel" id="contact" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" name="contact"
+                            placeholder="EX : 078-6538-963" required>
+                    </Label> <br> <br>
+                    <Label for="address"> Address Information: <br>
+                        <input type="text" id="address" name="address" placeholder="Street no, House No, City" required>
+                    </Label><br> <br>
+                    <label for="promo"> Promo Code: <br>
+                        <input type="text" id="promo" name="promo">
+                    </label>
+                </div>
+                <div id="midSide">
+                    <!-- <Label> Please select items and quantities: </Label>-->
+                    <label for="">
+                        <input type="checkbox" id="T-shirts" value="T-shirts" name="one"> T-Shirts <br><input
+                            type="number" min="1" max="30" id="one" name="number"></label> <br> <br>
+                    <label for="">
+                        <input type="checkbox" id="Pants" value="Pants" name="two"> Pants <br><input type="number"
+                            min="1" max="30" id="two" name="number"></label><br> <br>
+                    <label for="">
+                        <input type="checkbox" id="Shorts" value="Shorts" name="three"> Shorts <br><input type="number"
+                            min="1" max="30" id="three" name="number"></label><br> <br>
+                    <label for="">
+                        <input type="checkbox" id="Formal Wear" value="Formal Wear" name="four"> Formal Wear <br><input
+                            type="number" min="1" max="30" id="four" name="number"></label><br> <br>
+                </div>
+                <div id="rightSide">
+                    <label for="">
+                        <input type="checkbox" id="Socks and Underwear" value="Socks and Underwear" name="five"> Socks
+                        and
+                        Underwear <br><input type="number" min="1" max="30" id="five" name="number"></label><br> <br>
+                    <label for="">
+                        <input type="checkbox" id="Jackets" value="Jackets" name="six"> Jackets <br><input type="number"
+                            min="1" max="30" id="six" name="number"></label><br> <br>
+                    <label for="">
+                        <input type="checkbox" id="Others" value="Others" name="saven"> Others <br><input type="number"
+                            min="1" max="30" id="saven" name="number"></label><br> <br>
+                </div>
+                <input id="inputBtn" type="submit" value="Proceed to Checkout">
+
+            </fieldset>
+        </form>
+
+
+    </div>
+    <div id="reciept">
+
+    </div>
+    <button value="submit" id="place-order">Place Order</button>
+
+    <footer class="footer-dark">
+        <div class="container1">
+            <div class="about-links">
+
+                <ul>
+                    <li>
+                        <h3>About</h3>
+                    </li>
+                    <li><a href="home.html">Company</a></li>
+                    <li><a href="aboutUs.html">Team</a></li>
+                    <li><a href="#">Offers</a></li>
+                </ul>
+            </div>
+
+            <div class="about-paraghraph">
+                <p>No change? No problem! <br>
+                    Laundry Shark understands that consumers today have more choices, more mobility, and less time than
+                    ever before.</p>
+            </div>
+            <div class="social-media">
+                <ul>
+
+                    <li> <a href="#" title="FaceBook"><i class="fab fa-facebook-square"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-tiktok"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-whatsapp-square"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <hr>
+        </div>
+        <p class="copyright">Laundry Shark © 2021</p>
+        </div>
+
+    </footer>
+    
+    <script src="js/Footerscript.js"></script>
+
+
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
