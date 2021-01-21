@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Orbitron:wght@400&display=swap');
 
 /* ========================================================================== */
+
+
   *{
     margin:0;
     padding:0;
@@ -118,16 +120,14 @@
   }
   .container1 .about-links{
     margin-top: 15px;
-    text-align: center;
+    text-align: left;
     width: 30%;
     margin-left: 100px;
   
   }
   .container1 .about-links ul{
     list-style: none;
-    text-align: center;
-    text-align: left;
-    padding-left: 35px;
+  
     
   }
   .container1 .social-media ul{
@@ -174,7 +174,7 @@
 
   /*======================================================*/
   /*Form*/
-  #order-from{
+  /* #order-from{
     
     position: relative;
     width: 100%;
@@ -228,10 +228,7 @@
     margin-left: 25px;
   }
 
-  body{
-    background-image: url("https://previews.123rf.com/images/cinderelladesign/cinderelladesign1610/cinderelladesign161000029/66635357-light-blue-bubbles-seamless-background-.jpg");
-    
-  }
+
   #order{
     display: flex;
     justify-content: space-evenly;
@@ -270,41 +267,162 @@
     width: 300px;
     padding: 8px;
     background-color: #95e7b6;
-  }
+  } */
+  /* body{
+    background-image: url("https://previews.123rf.com/images/cinderelladesign/cinderelladesign1610/cinderelladesign161000029/66635357-light-blue-bubbles-seamless-background-.jpg");
+    
+  } */
+.order{
+  width: 99%;
+  height: 120vh;
+
+}
+.order .form-title{
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #0A2A73;
+ 
+  margin: 20px
+}
+form{
+  width: 100%;
+}
+fieldset{
+  border: 0;
+  width: 100%;
+  height: 100vh;
+  
+}
+.order .leftSide{
+  display: flex;
+  text-align: center;
+  margin: 50px;
+}
+.order .leftSide .name , .contact,.address{
+  width: 30%;
+  height: 15vh;
+  margin-left: 30px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2.5px solid #0A2A73;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+}
+input[type=tel], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2.5px solid #0A2A73;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+}
+ label {
+  color: #251641;
+  font-weight: bold;
+  font-size: 17pt;
+  font-family: 'Cinzel', serif;
+}
 
 
+.midSide{
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.checkbox-title,.personal-info,.promo-title{
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: #44D382;
+  background-color:#251641;
+  margin: 20px;
+  font-size: 15pt;
+  padding: 10px;
+}
+.first-checkbox,.second-checkbox{
+  color: #251641;
+  font-weight: bold;
+  font-size: 15pt;
+  font-family: 'Cinzel', serif;
+  width: 100%;
+  
+}
+input[type=number], select {
+  width: 12%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2.5px solid #0A2A73;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.rightSide{
+ 
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.promo-info{
+
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  margin-left: 25%;
+}
+input[type=submit], select {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2.5px solid #0A2A73;
+  border-radius: 4px;
+  font-weight: bold;
+  box-sizing: border-box;
+  background-color: #0A2A73;
+  color: #5ADDE6;
+  font-family: 'Cinzel', serif;
+}
+input[type=submit]:hover, select {
+  background-color:#5ADDE6;
+  color: #251641;
+}
+
+.rightSide input[type=text], select {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2.5px solid #0A2A73;
+  border-radius: 4px;
+  box-sizing: border-box;
+ 
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#place-order{
+    color: #5adde6;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    width: 300px;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #0A2A73;
+}
+#place-order:hover{
+  background-color:#5ADDE6;
+  color: #251641;
+}
 
 
   
@@ -376,12 +494,13 @@ margin-right:auto;
     margin:0;
     padding:0;
     background:#5adde6;
+    
   }
   .bubbles{
     position:absolute;
     width:100%;
     height: 100%;
-    z-index:0;
+    z-index:-1;
     overflow:hidden;
     top:0;
     left:0;

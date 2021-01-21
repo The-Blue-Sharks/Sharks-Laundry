@@ -7,11 +7,11 @@
     margin:0;
     padding: 0;
   }
+
   body{
     background-color:#95E7B66E;
     
   }
-
 
 /* ========================================================================== */
 
@@ -124,15 +124,14 @@
 }
 .container1 .about-links{
   margin-top: 15px;
-  text-align: center;
+  text-align: left;
   width: 30%;
-  margin-left: 50px;
+  margin-left: 100px;
 
 }
 .container1 .about-links ul{
   list-style: none;
-  text-align: left;
-  padding-left: 35px;
+
   
 }
 .container1 .social-media ul{
@@ -285,6 +284,7 @@ p {
   font-family: 'Orbitron', sans-serif;
 
 }
+
 
 .offer-one p span{
   color: maroon;

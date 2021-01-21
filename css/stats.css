@@ -52,7 +52,11 @@ nav a:hover {
   color: #c0392b;
   font-weight: bold;
 }
-
+ul li{
+  font-family: 'Orbitron', sans-serif;
+  word-wrap:break-word;
+    white-space: normal;
+  }
 
 /* ========================footer */
 .footer-dark {
@@ -115,16 +119,14 @@ nav a:hover {
   }
   .container1 .about-links{
     margin-top: 15px;
-    text-align: center;
+    text-align: left;
     width: 30%;
     margin-left: 100px;
   
   }
   .container1 .about-links ul{
     list-style: none;
-    text-align: center;
-    text-align: left;
-    padding-left: 35px;
+   
     
   }
   .container1 .social-media ul{
@@ -215,12 +217,13 @@ section input[type=password] {
 }
 
 .display-table{
+  width: 100%;
   margin-top: 10px;
   text-align:center;
 }
 
 .display-table #owner-table{
-  width: 80%;
+  width: 1200px;
   text-align: center;
   margin-left:auto;
   margin-right:auto;
@@ -237,18 +240,19 @@ section input[type=password] {
   text-align: center;
   padding: 20px 15px;
   font-weight: 500;
-  font-size: 20px;
+  font-size:17px;
   color: white;
   opacity: 0.85;
   background-color:#251641;
   text-transform: uppercase;
 }
+
 .display-table #owner-table td {
   text-align: center;
   padding: 15px;
   font-weight: 300;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   color: #0A2A73;
   font-family: 'Cinzel', serif;
   border-bottom: solid 1px  #44d382;

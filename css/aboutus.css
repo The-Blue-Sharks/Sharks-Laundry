@@ -171,14 +171,17 @@ display: block;
   }
   .container1 .about-links{
     margin-top: 15px;
-    text-align: center;
+    text-align: left;
     width: 30%;
     margin-left: 100px;
   
   }
+  .container1 .about-links h3{
+    text-align: left;
+  }
   .container1 .about-links ul{
     list-style: none;
-    text-align: center;
+ 
     
   }
   .container1 .social-media ul{

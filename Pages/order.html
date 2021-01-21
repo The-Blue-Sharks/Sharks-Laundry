@@ -29,6 +29,32 @@
 
         </div>
     </section>
+    <!-- <header> -->
+    <!-- <nav class="nav" style="margin-bottom: 20em;">
+            <div class="container">
+                <h1 class="logo"><a href="#">My Website</a></h1>
+                <ul>
+                    <li><a href="../Index.html" >Home</a></li>
+                    <li><a href="order.html" class="current">OrderPage</a></li>
+                    <li><a href="offers.html">DailyOffer</a></li>
+                    <li><a href="stats.html">Statistics</a></li>
+                    <li><a href="aboutUs.html" >About</a></li>
+                </ul>
+            </div>
+        </nav> -->
+    <!-- <nav class="nav">
+            <div class="container">
+                <h1 class="logo"><a href="#"><img src="/img/Logo.png"></a></h1>
+                <ul>
+                    <li><a href="../Index.html">Home</a></li>
+                    <li><a href="order.html" class="current">OrderPage</a></li>
+                    <li><a href="offers.html">DailyOffer</a></li>
+                    <li><a href="stats.html">Statistics</a></li>
+                    <li><a href="aboutUs.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
 
     <header id="header">
         <div id="logo-container">
@@ -57,52 +83,72 @@
 
 
     <div class="order">
+        <h1 class="form-title">Order Form </h1>
         <form action="" id="order-from">
+
             <fieldset>
-                <legend>Order Form </legend>
-                <div id="leftSide">
-                    <label for="name"> Name: <br>
+                <h1 class="personal-info">Personal Information</h1>
+                <div class="leftSide">
+                    
+                    <div class="name">
+                        <label for="name"> Name: </label>
                         <input type="text" id="Name" name="name" placeholder="Your Name" required>
-                    </label> <br> <br>
-                    <Label for="contact"> Contact Number: <br>
+                    </div>
+                    <div class="contact">
+                        <Label for="contact"> Contact Number: </Label>
                         <input type="tel" id="contact" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" name="contact"
                             placeholder="EX : 078-6538-963" required>
-                    </Label> <br> <br>
-                    <Label for="address"> Address Information: <br>
+                    </div>
+                    <div class="address">
+                        <Label for="address"> Address Information:</Label>
                         <input type="text" id="address" name="address" placeholder="Street no, House No, City" required>
-                    </Label><br> <br>
-                    <label for="promo"> Promo Code: <br>
-                        <input type="text" id="promo" name="promo">
-                    </label>
+                    </div>
                 </div>
-                <div id="midSide">
-                    <!-- <Label> Please select items and quantities: </Label>-->
-                    <label for="">
-                        <input type="checkbox" id="T-shirts" value="T-shirts" name="one"> T-Shirts <br><input
-                            type="number" min="1" max="30" id="one" name="number"></label> <br> <br>
-                    <label for="">
-                        <input type="checkbox" id="Pants" value="Pants" name="two"> Pants <br><input type="number"
-                            min="1" max="30" id="two" name="number"></label><br> <br>
-                    <label for="">
-                        <input type="checkbox" id="Shorts" value="Shorts" name="three"> Shorts <br><input type="number"
-                            min="1" max="30" id="three" name="number"></label><br> <br>
-                    <label for="">
-                        <input type="checkbox" id="Formal Wear" value="Formal Wear" name="four"> Formal Wear <br><input
-                            type="number" min="1" max="30" id="four" name="number"></label><br> <br>
-                </div>
-                <div id="rightSide">
-                    <label for="">
+                <div class="midSide">
+                    <h1 class="checkbox-title">Clothes Type And Quantity</h1>
+                    <div class="first-checkbox">
+                        <input type="checkbox" id="T-shirts" value="T-shirts" name="one"> T-Shirts
+                        <input type="number" min="1" max="30" id="one" name="number">
+
+                        <input type="checkbox" id="Pants" value="Pants" name="two"> Pants
+                        <input type="number" min="1" max="30" id="two" name="number">
+
+                        <input type="checkbox" id="Shorts" value="Shorts" name="three"> Shorts
+                        <input type="number" min="1" max="30" id="three" name="number">
+
+                        <input type="checkbox" id="Formal Wear" value="Formal Wear" name="four"> Formal Wear
+                        <input type="number" min="1" max="30" id="four" name="number">
+                    </div>
+                    <div class="second-checkbox">
                         <input type="checkbox" id="Socks and Underwear" value="Socks and Underwear" name="five"> Socks
                         and
-                        Underwear <br><input type="number" min="1" max="30" id="five" name="number"></label><br> <br>
-                    <label for="">
-                        <input type="checkbox" id="Jackets" value="Jackets" name="six"> Jackets <br><input type="number"
-                            min="1" max="30" id="six" name="number"></label><br> <br>
-                    <label for="">
-                        <input type="checkbox" id="Others" value="Others" name="saven"> Others <br><input type="number"
-                            min="1" max="30" id="saven" name="number"></label><br> <br>
+                        Underwear
+                        <input type="number" min="1" max="30" id="five" name="number">
+
+                        <input type="checkbox" id="Jackets" value="Jackets" name="six"> Jackets
+                        <input type="number" min="1" max="30" id="six" name="number">
+
+                        <input type="checkbox" id="Others" value="Others" name="saven"> Others
+                        <input type="number" min="1" max="30" id="saven" name="number">
+                    </div>
+
+
+
                 </div>
-                <input id="inputBtn" type="submit" value="Proceed to Checkout">
+                <div class="rightSide">
+                    <h1 class="promo-title">Promo Code And Submit</h1>
+                    <div class="promo-info">
+                        <label for="promo"> Promo Code: </label>
+                        <input type="text" id="promo" name="promo">
+    
+                    </div>
+                    <div class="submit-promo">
+                        <input id="inputBtn" type="submit" value="Proceed to Checkout">
+                    </div>
+                 
+                    
+                </div>
+
 
             </fieldset>
         </form>
@@ -122,9 +168,9 @@
                     <li>
                         <h3>About</h3>
                     </li>
-                    <li><a href="home.html">Company</a></li>
+                    <li><a href="../Index.html">Company</a></li>
                     <li><a href="aboutUs.html">Team</a></li>
-                    <li><a href="#">Offers</a></li>
+                    <li><a href="offers.html">Offers</a></li>
                 </ul>
             </div>
 
@@ -145,13 +191,13 @@
             </div>
 
         </div>
-        <hr>
+        
         </div>
         <p class="copyright">Laundry Shark © 2021</p>
         </div>
 
     </footer>
-    
+
     <script src="js/Footerscript.js"></script>
 
 
